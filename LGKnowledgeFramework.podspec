@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LGKnowledgeFramework'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of LGKnowledgeFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+'A long description of LGKnowledgeFramework.'
                        DESC
 
   s.homepage         = 'https://github.com/GuiLQing/LGKnowledgeFramework'
@@ -28,9 +28,17 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/GuiLQing/LGKnowledgeFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  
+  s.vendored_frameworks = 'LGKnowledgeFramework/Classes/LGKnowledgeFramework.framework'
+  s.frameworks = 'AudioToolbox', 'AVFoundation', 'CoreGraphics', 'CoreMedia', 'CoreVideo', 'MediaPlayer', 'MobileCoreServices', 'OpenGLES', 'QuartzCore', 'UIKit', 'VideoToolbox', 'Accelerate'
+  s.libraries = 'z', 'bz2', 'stdc++'
+  s.requires_arc = true
+  s.resource_bundles = {
+      'Resources' => 'LGKnowledgeFramework/Classes/LGKnowledgeFramework.bundle'
+  }#资源文件的路径，会在pod中创建“Resources”的文件夹
 
-  s.source_files = 'LGKnowledgeFramework/Classes/**/*'
+  # s.source_files = 'LGKnowledgeFramework/Classes/**/*'
   
   # s.resource_bundles = {
   #   'LGKnowledgeFramework' => ['LGKnowledgeFramework/Assets/*.png']
@@ -39,4 +47,14 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'IJKMediaFramework'
+  s.dependency 'AFNetworking', '~> 3.1.0'
+  s.dependency 'MJExtension', '~> 3.0.13'
+  s.dependency 'Masonry', '~> 1.0.2'
+  s.dependency 'MarqueeLabel','~> 3.0.5'
+  s.dependency 'MJRefresh', '~> 3.1.12'
+  s.dependency 'SDWebImage', '~> 4.0.0'
+  s.dependency 'TFHpple', '~> 2.0.0'
+  s.dependency 'LGAlertHUD', '1.0.1'
+  s.dependency 'Reachability'
 end

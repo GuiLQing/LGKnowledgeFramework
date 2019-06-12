@@ -1,0 +1,6 @@
+framework module LGKnowledgeFramework {
+  umbrella header "LGKnowledgeFramework.h"
+
+  export *
+  module * { export * }
+}
