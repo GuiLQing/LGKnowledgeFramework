@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LGKnowledgeFramework'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of LGKnowledgeFramework.'
 
 # This description is used to generate tags and improve search results.
@@ -48,13 +48,13 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.dependency 'IJKMediaFramework'
-  s.dependency 'AFNetworking', '~> 3.1.0'
-  s.dependency 'MJExtension', '~> 3.0.13'
-  s.dependency 'Masonry', '~> 1.0.2'
-  s.dependency 'MarqueeLabel','~> 3.0.5'
-  s.dependency 'MJRefresh', '~> 3.1.12'
-  s.dependency 'SDWebImage', '~> 4.0.0'
-  s.dependency 'TFHpple', '~> 2.0.0'
-  s.dependency 'LGAlertHUD', '1.0.1'
+  s.dependency 'AFNetworking'
+  s.dependency 'MJExtension'
+  s.dependency 'Masonry'
+  s.dependency 'MarqueeLabel'
+  s.dependency 'MJRefresh'
+  s.dependency 'SDWebImage'
+  s.dependency 'TFHpple'
+  s.dependency 'LGAlertHUD'
   s.dependency 'Reachability'
 end
